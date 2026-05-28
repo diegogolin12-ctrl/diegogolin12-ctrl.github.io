@@ -1,0 +1,133 @@
+          * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    background: linear-gradient(90deg, rgb(0, 247, 12) 0%, rgb(16, 204, 47) 70%);
+    min-height: 80px;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #099c35;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 12px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: #51bd6e;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.contenido-principal {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #030303;
+}
+
+.imagen-destacada img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:991px) {
+    .content {
+        min-height: 70px;
+    }
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(90deg, rgb(12, 226, 83) 0%, rgb(13, 241, 89) 70%);
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+        color: #ffffff;
+    }
+    #menu {
+        display: none;
+    }
+    .menu-icono {
+        width: 25px;
+    }
+    .menu label {
+        cursor: pointer;
+        display: none;
+        width: 26px;
+    }
+}
